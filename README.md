@@ -115,13 +115,11 @@ run_antenna_check
 
 # COURSE
 
-<details>
-<summary>DAY 1 : Inception of opensource-EDA, Opennlane and Skywater130</summary>
-<br>
+## DAY 1 : Inception of opensource-EDA, Openlane and Skywater130
 
 ## Skywater-130 PDK
 
-![A_DAY1_PDKS](https://github.com/yagnavivek/PES_OpenLane_PD/assets/93475824/64ca3a21-4a81-4094-ad18-0079d698d645)
+![A_DAY1_PDKS](https://github.com/skudlur/pes_pd/assets/38615795/f5ddfed7-4c3d-4324-a616-c2298d879618)
 
 The Skywater PDK files we are working with are described under $PDK_ROOT
 1. Skywater-pdk – Contains all the foundry provided PDK related files
@@ -130,7 +128,8 @@ The Skywater PDK files we are working with are described under $PDK_ROOT
 
 ## Invoking OpenLane
 
-![a_day1_invoke](https://github.com/yagnavivek/PES_OpenLane_PD/assets/93475824/77ca741e-1ec1-4322-a67e-dd6bbcd8a1e6)
+![a_day1_invoke](https://github.com/skudlur/pes_pd/assets/38615795/3198aaaf-49dc-46ba-ac9a-d82fc6e92d08)
+
 
 flow.tcl is the file that contains the script to run the designs
 
@@ -138,28 +137,33 @@ flow.tcl is the file that contains the script to run the designs
 
 Different software dependencies are needed to run OpenLANE. To import these into the OpenLANE tool we need to run: ```package require openlane 0.9```
 
-![a_day1_packagge_req](https://github.com/yagnavivek/PES_OpenLane_PD/assets/93475824/0ee50a40-0d0a-4bcd-bcf4-f7a3fc8204e9)
+![a_day1_packagge_req](https://github.com/skudlur/pes_pd/assets/38615795/ac96ff56-2b72-49df-854d-69edf082d417)
 
-## Designs presnt in openalne and Heirarchy in a Design
 
-![a_day1_designhier](https://github.com/yagnavivek/PES_OpenLane_PD/assets/93475824/306d0c04-e1f4-4936-825a-b9480defde52)
+## Designs present in Openlane and Hierarchy in a Design
 
-- ```Src folder``` - Contains verilog files and sdc constraint files
-- ```Config.tcl files``` - Design specific configuration switches used by OpenLANE
+![a_day1_designhier](https://github.com/skudlur/pes_pd/assets/38615795/b2af23ec-63e7-4bd8-8177-59df7c2aaee9)
+
+
+- ```src folder``` - Contains verilog files and sdc constraint files
+- ```config.json files``` - Design specific configuration switches used by OpenLANE
 
 ## Config file example content
 
-![a_day1_configtcl](https://github.com/yagnavivek/PES_OpenLane_PD/assets/93475824/fcbdac6f-704e-4bdd-a051-791525392433)
+![a_day1_configtcl](https://github.com/skudlur/pes_pd/assets/38615795/56ad6b08-d24d-44ab-ab0a-dbf3d888befd)
+
 
 ## Prepare the design for the flow 
 
 ```prep -design <design_name> -tag <tag>```
 
-![a_day1_prep_design](https://github.com/yagnavivek/PES_OpenLane_PD/assets/93475824/4517d1fe-69d8-4da1-96e3-40debdc548af)
+![a_day1_prep_design](https://github.com/skudlur/pes_pd/assets/38615795/0ab7056e-7312-479f-b089-ecbf42cedbc0)
+
 
 Once the design prep stage is done, it creates a runs directory where all the results will be stored
 
-![a_day1_runs](https://github.com/yagnavivek/PES_OpenLane_PD/assets/93475824/0b7230f2-589a-4ff6-a9e3-0764235c8fce)
+![a_day1_runs](https://github.com/skudlur/pes_pd/assets/38615795/b5a94747-d986-48bc-9eb6-a8730b71a674)
+
 
 ## Synthesis
 
